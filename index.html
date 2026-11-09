@@ -1,24 +1,40 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GitHub Pages Demo</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 80px 20px;
-      background-color: #f0f4f8;
-    }
-    h1 { color: #0969da; }
-    p { font-size: 20px; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A simple, local-first website for practicing GitHub Pages.">
+  <title>Home | GitHub Pages Demo</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
 </head>
 <body>
-  <h1>My First GitHub Pages Website</h1>
-  <p>My website has been successfully updated!</p>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="images/logo.svg" alt="" width="40" height="40"><span>Pages Demo</span></a>
+      <nav aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-pressed="false" hidden>Dark mode</button>
+    </div>
+  </header>
+  <main id="main" class="container">
+    <section class="hero">
+      <p class="eyebrow">A small website. A great first step.</p>
+      <h1>GitHub Pages Multi-Page Demo</h1>
+      <p class="lead">Three pages, shared assets, and a little JavaScript. Explore a simple static website built for your first GitHub Pages experiment.</p>
+      <div class="actions"><a class="button" href="about.html">Explore the demo <span aria-hidden="true">&rarr;</span></a><a class="text-link" href="contact.html">Visit contact page</a></div>
+    </section>
+    <section class="cards" aria-label="What to test">
+      <article class="card"><span class="step">01 / NAVIGATION</span><h2>Follow the links</h2><p>Move between Home, About, and Contact to check that every page is connected.</p></article>
+      <article class="card"><span class="step">02 / LOCAL ASSETS</span><h2>See it come together</h2><p>The logo, colors, and layout load from files included in this project.</p></article>
+      <article class="card"><span class="step">03 / INTERACTION</span><h2>Try a different theme</h2><p>Use the theme button above to switch between light and dark mode.</p></article>
+    </section>
+    <aside class="note"><strong>Ready for your next lesson?</strong><p>Upload these files and folders together, keeping the same structure. The home page is <code>index.html</code>.</p></aside>
+  </main>
+  <footer class="container site-footer"><span>GitHub Pages practice project</span><span>HTML &middot; CSS &middot; JavaScript</span></footer>
 </body>
 </html>
-  

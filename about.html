@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learn how the pages and local assets in this static demo fit together.">
+  <title>About | GitHub Pages Demo</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="images/logo.svg" alt="" width="40" height="40"><span>Pages Demo</span></a>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-pressed="false" hidden>Dark mode</button>
+    </div>
+  </header>
+  <main id="main" class="container">
+    <section class="hero">
+      <p class="eyebrow">Behind the pages</p>
+      <h1>About This Demo</h1>
+      <p class="lead">A beginner-friendly project that shows how a few ordinary files can become a complete website. No installation or build step required.</p>
+    </section>
+    <section class="cards" aria-label="Project ingredients">
+      <article class="card"><span class="step">HTML</span><h2>Three connected pages</h2><p>Each page has its own content and the same navigation, so you can explore the whole site.</p></article>
+      <article class="card"><span class="step">CSS</span><h2>One shared stylesheet</h2><p><code>css/style.css</code> sets the layout, typography, and theme colors for every page.</p></article>
+      <article class="card"><span class="step">JAVASCRIPT + SVG</span><h2>Small files, useful details</h2><p><code>js/script.js</code> powers the theme button. <code>images/logo.svg</code> supplies the local logo.</p></article>
+    </section>
+    <aside class="note"><strong>Why relative paths?</strong><p>Links such as <code>about.html</code> and <code>images/logo.svg</code> stay relative to the page, whether you open it locally or inside a repository path.</p></aside>
+    <div class="page-next"><a class="text-link" href="contact.html">Continue to Contact <span aria-hidden="true">&rarr;</span></a></div>
+  </main>
+  <footer class="container site-footer"><span>GitHub Pages practice project</span><span>HTML &middot; CSS &middot; JavaScript</span></footer>
+</body>
+</html>
